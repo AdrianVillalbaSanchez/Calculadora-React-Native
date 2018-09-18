@@ -5,7 +5,7 @@ class Calc extends React.Component {
     constructor() {
         super()
         this.state = {
-            inputText: ""
+            inputText: "" // "no queremos controlar el valor sino mantenerlo"
         }
     }
 
