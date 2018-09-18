@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import React from "react";
+import { View, Text } from "react-native";
 
-class Calc extends Component {
-
+class Calc extends React.Component {
     render() {
         return (
             <View >
                 <Text> Hola </Text>
             </View>
-        )
+        );
     }
 }
 
