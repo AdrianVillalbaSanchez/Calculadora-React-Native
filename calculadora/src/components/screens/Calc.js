@@ -2,12 +2,20 @@ import React from "react";
 import { View, StyleSheet, TextInput } from "react-native";
 
 class Calc extends React.Component {
+
+    handleInput(text) {
+        this.setState({
+            text: text
+        })
+    }
+
     render() {
         return (
             <View style={{ flex: 1, backgroundColor: "red" }}>
-                <TextInput style={{
-                    styles.input
-                }} />
+                <TextInput
+                    onChangeText={this.handleInput.bind(this)} // qué hacer cuando cambia el textinput
+                    value={"360"} // valor por defecto
+                    style={styles.input} />
             </View>
         );
     }
