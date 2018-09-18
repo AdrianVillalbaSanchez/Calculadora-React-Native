@@ -5,7 +5,9 @@ class Calc extends Component {
 
     render() {
         return (
-            <View><Text> Hola</Text> </View>
+            <View >
+                <Text> Hola </Text>
+            </View>
         )
     }
 }
