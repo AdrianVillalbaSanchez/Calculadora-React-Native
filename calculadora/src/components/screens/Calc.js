@@ -35,7 +35,7 @@ class Calc extends React.Component {
 
                 <View style={{ flex: 1, flexDirection: "row" }}>
                     {this.validKeys.map((key, i) => {
-                        return <View style={{ flex: 1, borderWidth: 1 }}></View>
+                        return <View style={styles.button}></View>
                     })}
                 </View>
             </View>
@@ -50,7 +50,9 @@ const styles = StyleSheet.create({
         color: 'rgb(255,255,255)',
         fontSize: 48,
         textAlign: 'right'
-    }
+    },
+
+    button: { flex: 1, borderWidth: 1 }
 })
 
 export default Calc;
