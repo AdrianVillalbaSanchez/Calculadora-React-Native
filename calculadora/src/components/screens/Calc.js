@@ -17,7 +17,7 @@ class Calc extends React.Component {
 
     render() {
         return (
-            <View style={{ flex: 1, backgroundColor: "red" }}>
+            <View style={{ flex: 1 }}>
                 <TextInput
                     onChangeText={this.handleInput.bind(this)} // qué hacer cuando cambia el textinput
                     value={this.state.inputText} // valor por defecto
