@@ -16,7 +16,7 @@ class Calc extends React.Component {
 
         // Estos "numeros" y "signos" tenemos que convertirlos a números de verdad, 
         // solo aceptar la introducción de estos. Están fuera del state ya que no van
-        // a cambiar. CLASS LEVEL VARIABLE.
+        // a cambiar. CLASS LEVEL VARIABLE. Se puede poner en el state. Es como una constante.
     }
 
     handleInput(text) {
@@ -33,7 +33,7 @@ class Calc extends React.Component {
                     value={this.state.inputText} // valor por defecto
                     style={styles.input} />
 
-                <View style={{ flex: 1, backgroundColor: "blue" }} />
+                <View style={{ flex: 1, flexDirection: "row" }}> </View>
             </View>
         );
     }
