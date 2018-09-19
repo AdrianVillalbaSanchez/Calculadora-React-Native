@@ -33,7 +33,11 @@ class Calc extends React.Component {
                     value={this.state.inputText} // valor por defecto
                     style={styles.input} />
 
-                <View style={{ flex: 1, flexDirection: "row" }}> </View>
+                <View style={{ flex: 1, flexDirection: "row" }}>
+                    {this.validKeys.map((key, i) => {
+                        return <View style={{ flex: 1, borderWidth: 1 }}></View>
+                    })}
+                </View>
             </View>
         );
     }
