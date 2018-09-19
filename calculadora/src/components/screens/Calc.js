@@ -15,7 +15,8 @@ class Calc extends React.Component {
         ]
 
         // Estos "numeros" y "signos" tenemos que convertirlos a números de verdad, 
-        // solo aceptar la introducción de estos.
+        // solo aceptar la introducción de estos. Están fuera del state ya que no van
+        // a cambiar. CLASS LEVEL VARIABLE.
     }
 
     handleInput(text) {
