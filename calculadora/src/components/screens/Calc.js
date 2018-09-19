@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, TextInput } from "react-native";
+import { View, StyleSheet, TextInput, SafeAreaView } from "react-native";
 
 class Calc extends React.Component {
     constructor() {
