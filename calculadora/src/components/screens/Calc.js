@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, TextInput, SafeAreaView } from "react-native";
+import { View, StyleSheet, TextInput, Text } from "react-native";
 
 class Calc extends React.Component {
     constructor() {
@@ -40,8 +40,12 @@ class Calc extends React.Component {
                         }
                         return (
                             <View style={styles.row}>
-                                <View style={styles.button}></View>
-                                <View style={styles.button}></View>
+                                <View style={styles.button}>
+                                    <Text>{this.validKeys[i]}</Text>
+                                </View>
+                                <View style={styles.button}>
+                                    <Text>{this.validKeys[i + 1]}</Text>
+                                </View>
                             </View>
                         );
                     })}
