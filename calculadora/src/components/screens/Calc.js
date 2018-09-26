@@ -35,7 +35,11 @@ class Calc extends React.Component {
 
                 <View style={{ flex: 1, flexDirection: "row" }}>
                     {this.validKeys.map((key, i) => {
-                        return <View style={styles.button}></View>
+                        return (
+                            <View>
+                                <View style={styles.button}></View>
+                            </View>
+                        );
                     })}
                 </View>
             </View>
