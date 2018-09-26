@@ -33,10 +33,13 @@ class Calc extends React.Component {
                     value={this.state.inputText} // valor por defecto
                     style={styles.input} />
 
-                <View style={{ flex: 1, flexDirection: "row" }}>
+                <View style={{ flex: 1, flexDirection: "column" }}>
                     {this.validKeys.map((key, i) => {
+                        if (i % 2 == 0) {
+                            return;
+                        }
                         return (
-                            <View>
+                            <View style={styles.row}>
                                 <View style={styles.button}></View>
                             </View>
                         );
@@ -56,7 +59,12 @@ const styles = StyleSheet.create({
         textAlign: 'right'
     },
 
-    button: { flex: 1, borderWidth: 1 }
+    button: { flex: 1, borderWidth: 1 },
+
+    row: {
+        flex: 1,
+        flexDirection: 'row'
+    }
 })
 
 export default Calc;
