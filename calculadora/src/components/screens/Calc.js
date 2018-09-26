@@ -41,6 +41,7 @@ class Calc extends React.Component {
                         return (
                             <View style={styles.row}>
                                 <View style={styles.button}></View>
+                                <View style={styles.button}></View>
                             </View>
                         );
                     })}
