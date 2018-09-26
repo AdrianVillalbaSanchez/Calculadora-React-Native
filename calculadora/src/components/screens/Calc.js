@@ -41,10 +41,10 @@ class Calc extends React.Component {
                         return (
                             <View style={styles.row}>
                                 <View style={styles.button}>
-                                    <Text>{this.validKeys[i]}</Text>
+                                    <Text style={styles.symbols}>{this.validKeys[i]}</Text>
                                 </View>
                                 <View style={styles.button}>
-                                    <Text>{this.validKeys[i + 1]}</Text>
+                                    <Text style={styles.symbols}>{this.validKeys[i + 1]}</Text>
                                 </View>
                             </View>
                         );
@@ -64,11 +64,15 @@ const styles = StyleSheet.create({
         textAlign: 'right'
     },
 
-    button: { flex: 1, borderWidth: 1 },
+    button: { flex: 1, borderWidth: 1, justifyContent: "center", alignItems: "center" },
 
     row: {
         flex: 1,
         flexDirection: 'row'
+    },
+
+    symbols: {
+        fontSize: 36,
     }
 })
 
